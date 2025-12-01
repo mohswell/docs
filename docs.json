@@ -973,6 +973,7 @@
                   "learn/playwright/handling-test-data",
                   "learn/playwright/how-to-parameterize-playwright-projects",
                   "learn/playwright/performance",
+                  "/learn/playwright/environment-configuration",
                   "learn/playwright/scraping-behind-login",
                   "learn/playwright/script-recorders",
                   "learn/playwright/steps-decorators",

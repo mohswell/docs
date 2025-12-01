@@ -550,6 +550,7 @@ This file contains all valid URLs extracted from docs.json organized by director
 - /learn/playwright/challenging-flows
 - /learn/playwright/handling-test-data
 - /learn/playwright/how-to-parameterize-playwright-projects
+- /learn/playwright/environment-configuration
 - /learn/playwright/performance
 - /learn/playwright/scraping-behind-login
 - /learn/playwright/script-recorders
