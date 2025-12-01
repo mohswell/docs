@@ -20,9 +20,16 @@ import PlaywrightCheckSuiteTryOut from "/snippets/playwright-check-suite-tryout.
 <PlaywrightCheckSuiteTryOut />
 
 ## Introduction
+### Environment Configuration Explained 
+
+Environment configuration is about managing the settings and variables that change between machines and environments (for example: `development`, `staging`, and `CI`). Properly configuring your environment makes tests reliable and portable across local development and CI runs.
 
 
 ### Environment Configuration Explained 
 
-To discover more practical fixture examples, check out , which covers fixtures in even more depth.
+Environment variables let you parameterize tests (base URLs, feature flags, timeouts, and non-sensitive credentials). Common practices:
+
+- Use `.env` files for local development and a secrets store or CI environment variables for private values — never commit secrets to source control.
+- Load local variables with `dotenv` during development, or wire them into Playwright's config (for example: `use: { baseURL: process.env.BASE_URL }`).
+- Prefer explicit fixture-based patterns for per-test setup (fixtures make it clear what state a test depends on and make tests easier to share).
 
